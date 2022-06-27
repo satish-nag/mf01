@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.js"></script>
+    <script type="systemjs-importmap">
+        {
+          "imports": {
+            "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
+            "react": "https://cdn.jsdelivr.net/npm/react@17.0.2/umd/react.production.min.js",
+            "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@17.0.2/umd/react-dom.production.min.js",
+            "root": "/bootstrap.js"
+          }
+        }
+      </script>
+</head>
+<body>
+<div id="root"></div>
+<script>
+    System.import("root")
+</script>
+</body>
+</html>
